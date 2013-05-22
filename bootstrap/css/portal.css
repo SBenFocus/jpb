@@ -4,13 +4,41 @@
 	margin-left: 165px;
 	margin-right: 15px;
 }
-.offset4p5 {
-	margin-left: 15px;
-	margin-right: 15px;
+.mainContainer {
+	background-color: #FFF;
+	
 }
-.offset7p5 {
-	margin-left: 15px;
-	margin-right: 165px;
+.headerBox {
+	row: span12;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+.welcomeBox {
+	height: 70px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top-style: solid;
+	border-top-color: #E3E3E3;
+	
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top, #FFFFFF 0%, #E3E3E3 100%);
 }
 .homeButton {
 	row: span4;
@@ -41,6 +69,26 @@
 	height: 190px;
 	width: 190px;
 }
+.messageButton {
+	
+	width: 220px;
+	height: 65px;
+	
+	margin-top: 10px;
+	
+}
+.btnIcon {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+	vertical-align:middle;
+	
+	/*padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;*/
+	
+}
 .portalTitleRed {
 	color: #F00;
 	font-size: 62px;
@@ -48,38 +96,6 @@
 .portalTitleBlue {
 	color: #006CB1;
 	font-size: 62px;
-}
-.headerBox {
-	row: span12;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	
-}
-.welcomeBox {
-	height: 70px;
-	margin-left: 30px;
-	margin-top: 5px;
-	margin-bottom: 15px;
-	border-top-style: solid;
-	border-top-color: #E3E3E3;
-	
-		/* IE10 Consumer Preview */ 
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
-	
-	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
-	
-	/* Opera */ 
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
-	
-	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
-	
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
-	
-	/* W3C Markup, IE10 Release Preview */ 
-	background-image: linear-gradient(to top, #FFFFFF 0%, #E3E3E3 100%);
 }
 .welcomeText1 {
 	text-indent: 35px;
@@ -101,26 +117,6 @@
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.messageButton {
-	
-	width: 220px;
-	height: 65px;
-	
-	margin-top: 10px;
-	
-}
-.btnIcon {
-	width: 70px;
-	height: 70px;
-	margin-bottom: 10px;
-	vertical-align:middle;
-	
-	/*padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 5px;
-	padding-left: 5px;*/
-	
-}
 .subtitle1 {
 	color: #FFF;
 	font-size: 22px;
@@ -139,7 +135,4 @@
 	line-height: 3; 
 	
 	text-align: center
-}
-.mainContainer {
-	background-color: #FFF;
 }
