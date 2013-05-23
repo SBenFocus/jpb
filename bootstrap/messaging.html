@@ -31,16 +31,49 @@
 <div class="span12 mainContainer">
     <div class="welcomeBox">
         <div class="span7">
-            <h1><large class="welcomeText1">Welcome</large><large class="welcomeText2"> enFocus</large></h1>
+            <h1><large id="portalSectionName" class="welcomeText1">Messages for:</large><large class="welcomeText2"> enFocus</large></h1>
         </div> 
     </div>
     <div class="row">
       <div class="span3">
-        <ul class="nav nav-tabs nav-stacked">
-          <li><a href="#">New Messages</a></li>
+        <ul class="nav nav-tabs nav-stacked nav-side">
+          <li class="active"><a href="#">New Messages</a></li>
           <li><a href="#">Archived Messages</a></li>
           <li><a href="#">Sent Messages</a></li>
         </ul>
+      </div>
+      <div class="span8" id="messageContent">
+        <h2>New Messages</h2>
+        <table width='100%' class="table table-bordered" id="newMessageTable">
+          <thead>
+            <tr>
+              <th width='10%'>Date</th>
+              <th width='90%' >Subject</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09/09/1987</td>
+              <td>Birth of a Star 1</td>
+            </tr>
+            <tr>
+              <td>09/09/1987</td>
+              <td>Birth of a Star 2</td>
+            </tr>
+            <tr>
+              <td>09/09/1987</td>
+              <td>Birth of a Star 3</td>
+            </tr>
+            <tr>
+              <td>09/09/1987</td>
+              <td>Birth of a Star 4</td>
+            </tr>
+            <tr>
+              <td>09/09/1987</td>
+              <td>Birth of a Star 5</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 </div>

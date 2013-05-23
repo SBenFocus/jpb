@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
+/*Nav*/
+.nav-side {
+	margin-top: 10px;
+	font-size: 1.5em;
+}
+
+
+/*Div*/
+
 .offset1p5 {
 	margin-left: 165px;
 	margin-right: 15px;
@@ -16,7 +25,6 @@
 }
 .welcomeBox {
 	height: 70px;
-	/*margin-left: 30px;*/
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-top-style: solid;
