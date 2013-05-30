@@ -73,6 +73,33 @@
 	
 	/* W3C Markup, IE10 Release Preview */ 
 	background-image: linear-gradient(to top, #FFFFFF 0%, #E3E3E3 100%);
+	
+}
+.footerBox1 {
+	height: 120px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-top-style: none;
+	border-top-color: #E3E3E3;
+	
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #E3E3E3 100%);
+
 }
 .homeButton {
 	row: span4;
@@ -113,8 +140,18 @@
 }
 .nextButton {
 	row: span12;
+	width: 125px;
+	height: 45px;
+	margin-bottom: 15px;
+	margin-left: 550px;
+	alignment-adjust: central;
+	
+}
+.contactButton {
+	row: span12;
 	width: 200px;
-	height: 50px;
+	height: 45px;
+	margin-left: 480px;
 	alignment-adjust: central;
 	
 }
@@ -122,7 +159,7 @@
 	width: 70px;
 	height: 70px;
 	margin-bottom: 10px;
-	vertical-align:middle;
+	vertical-align: middle;
 	
 	/*padding-top: 5px;
 	padding-bottom: 5px;
@@ -175,10 +212,21 @@
 	font-weight: bold;
 	line-height: 3; 
 	
-	text-align: center
+	text-align: center;
+
+}
+.buttonText1 {
+	color: #FFF;
+	font-size: 20px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: bold;
+	line-height: 2; 
+	
+	text-align: center	
+	
 }
 .loginText1 {
-	text-indent: hanging;
+	text-align: center;
 	color: #999;
 	font-size: 40px;
 	font-family:"MS Serif", "New York", serif;
