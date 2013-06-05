@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Nav*/
+.nav-side {
+	margin-top: 10px;
+	font-size: 1.5em;
+}
+
+
+/*Div*/
+
+.offset1p5 {
+	margin-left: 165px;
+	margin-right: 15px;
+}
+.mainContainer {
+	background-color: #FFF;
+	
+}
+.headerBox {
+	row: span12;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+.welcomeBox {
+	height: 70px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top-style: solid;
+	border-top-color: #E3E3E3;
+	
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top, #FFFFFF 0%, #E3E3E3 100%);
+	
+}
+.welcomeBox2 {
+	height: 120px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top-style: solid;
+	border-top-color: #E3E3E3;
+	
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top, #FFFFFF 0%, #E3E3E3 100%);
+	
+}
+.footerBox1 {
+	height: 120px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-top-style: none;
+	border-top-color: #E3E3E3;
+	
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #E3E3E3 100%);
+
+}
+.homeButton {
+	row: span4;
+	height: 250px;
+	width: 250px;
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 30px;
+	margin-right: 15px;
+	background: #006CB1;
+	box-shadow: 10px 10px 35px #888888;
+}
+.imageButton {
+	margin-left: 25px;
+	margin-right: 25px;
+	
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	height: 190px;
+	width: 190px;
+}
+.messageButton {
+	
+	width: 220px;
+	height: 65px;
+	
+	margin-top: 10px;
+	
+}
+.nextButton {
+	row: span12;
+	width: 125px;
+	height: 45px;
+	margin-bottom: 15px;
+	margin-left: 550px;
+	alignment-adjust: central;
+	
+}
+.contactButton {
+	row: span12;
+	width: 200px;
+	height: 45px;
+	margin-left: 480px;
+	alignment-adjust: central;
+	
+}
+.btnIcon {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	
+	/*padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;*/
+	
+}
+.portalTitleRed {
+	color: #F00;
+	font-size: 62px;
+}
+.portalTitleBlue {
+	color: #006CB1;
+	font-size: 62px;
+}
+.welcomeText1 {
+	text-indent: 35px;
+	color: #999;
+	font-size: 40px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: normal;
+	
+	margin-top: 30px;
+	margin-bottom: 10px;
+	
+}
+.welcomeText2 {
+	color: #999;
+	font-size: 40px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: bold;
+	
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.subtitle1 {
+	color: #FFF;
+	font-size: 22px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: bold;
+	line-height: none; 
+	
+	text-align: center
+	
+}
+.messageText {
+	color: #FFF;
+	font-size: 18px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: bold;
+	line-height: 3; 
+	
+	text-align: center;
+
+}
+.buttonText1 {
+	color: #FFF;
+	font-size: 20px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: bold;
+	line-height: 2; 
+	
+	text-align: center	
+	
+}
+.loginText1 {
+	text-align: center;
+	color: #999;
+	font-size: 40px;
+	font-family:"MS Serif", "New York", serif;
+	font-weight: normal;
+	
+}
