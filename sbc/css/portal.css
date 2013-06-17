@@ -142,16 +142,15 @@
 	row: span12;
 	width: 125px;
 	height: 45px;
-	margin-bottom: 15px;
-	margin-left: 550px;
+	margin-top: 15px;
+	margin-left: 530px;
 	alignment-adjust: central;
 	
 }
 .contactButton {
 	row: span12;
-	width: 200px;
-	height: 45px;
-	margin-left: 480px;
+	width: 190px;
+	height: 30px;
 	alignment-adjust: central;
 	
 }
@@ -217,10 +216,10 @@
 }
 .buttonText1 {
 	color: #FFF;
-	font-size: 20px;
+	font-size: 18px;
 	font-family:"MS Serif", "New York", serif;
 	font-weight: bold;
-	line-height: 2; 
+	line-height: 1.5; 
 	
 	text-align: center	
 	
