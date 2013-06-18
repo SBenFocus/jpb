@@ -101,6 +101,32 @@
 	background-image: linear-gradient(to bottom, #FFFFFF 0%, #E3E3E3 100%);
 
 }
+.footerBox2 {
+	height: 70px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-top-style: none;
+	border-top-color: #E3E3E3;
+	
+		/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #E3E3E3 100%);
+
+}
 .homeButton {
 	row: span4;
 	height: 250px;
@@ -142,7 +168,7 @@
 	row: span12;
 	/*width: 125px;
 	height: 45px;*/
-	margin-top: 30px;
+	margin-top: 3px;
 	margin-left: 525px;
 	alignment-adjust: central;
   	color: #ffffff;
@@ -169,7 +195,7 @@
 
  /* *zoom: 1;*/
   padding: 4px 12px;
-  margin-top: 30px;
+  margin-top: 3px;
 /*	margin-left: 510px;*/
 	alignment-adjust: central;
 /*  margin-bottom: 0;*/
