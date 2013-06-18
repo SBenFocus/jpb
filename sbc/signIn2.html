@@ -32,20 +32,161 @@
   
 <div class="well well-large span12">
 	<ul class="nav nav-tabs">
-      <li><a href="#home" data-toggle="tab">Registration</a></li>
-      <li class="active"> <a href="#profile" data-toggle="tab">Profile</a></li>
+      <li><a href="signIn1-copy.html" data-toggle="tab">Registration</a></li>
+      <li class="active"> <a href="signIn2.html" data-toggle="tab">Login/Security</a></li>
+      <li><a href="#profile" data-toggle="tab">Profile</a></li>
       <li><a href="#legal" data-toggle="tab">Legal Agreements</a></li>
     </ul>
     <div class="span12">
     	<h1 align="center">
-        	<span class="loginText1">Please Create a User Profile</span>
+        	<span class="loginText1">Login Information</span>
       	</h1>
-      	<h5 align="center">Step 2 of 3</h5>
+      	<h5 align="center">Step 2 of 4</h5>
         <h5 align="center">All fields are required.</h5>
     </div>
     <div class="container">
-        <form>
-
+        <form class="form-horizontal" action='' method="POST">
+          <fieldset>
+            <div id="legend">
+              <legend></legend>
+            </div>
+            <div class="control-group">
+              <!-- Username -->
+              <label class="control-label"  for="username">E-mail</label>
+                  <div class="controls">
+                    <input type="text" id="username" name="username" placeholder="example@email.com" class="input-xlarge" required="required">
+                    <p class="help-block">Your email address will serve as your username.</p>
+                  </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="email">Confirm E-mail</label>
+                  <div class="controls">
+                    <input type="text" id="email" name="email" placeholder="example@email.com" class="input-xlarge" required="required">
+                    <p class="help-block">Please re-enter your E-mail address.</p>
+                  </div>
+            </div>
+            <div class="control-group">
+              <!-- Password-->
+              <label class="control-label" for="password">Password</label>
+              <div class="controls">
+                <input type="password" id="password" name="password" placeholder="" class="input-xlarge" required="required">
+                <p class="help-block">Password should be at least 6 characters.</p>
+              </div>
+            </div>
+        
+            <div class="control-group">
+              <!-- Password -->
+              <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+              <div class="controls">
+                <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge" required="required">
+                <p class="help-block">Please confirm password.</p>
+              </div>
+            </div>
+            
+            <!-- Security Question -->
+            <div class="control-group">
+              <label class="control-label">Security Question #1</label>
+              <div class="controls">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>What was your favorite sport in high school?</option>
+                  <option>What is the name of the High School you graduated from?</option>
+                  <option>In what year was your father born?</option>
+                  <option>In what year was your mother born?</option>
+                  <option>What is your mother's maiden name?</option>
+                  <option>What was the color of your first car?</option>
+                  <option>What is your father's middle name?</option>
+                  <option>On which wrist do you wear your watch?</option>
+                  <option>What is the title and artist of your favorite song?</option>
+                  <option>What is your favorite movie?</option>
+                  <option>What is your favorite TV program?</option>
+                  <option>What was the name of your first pet?</option>
+                  <option>What sports team do you love to see lose?</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label">Answer #1</label>
+              <div class="controls">
+                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xlarge" required="">
+                <p class="help-block">Your answer is case-sensitive.</p>
+              </div>
+            </div>
+            
+            <!-- Select Basic -->
+            <div class="control-group">
+              <label class="control-label">Security Question #3</label>
+              <div class="controls">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>What was the name of your elementary / primary school?</option>
+                  <option>What is the name of the company of your first job?</option>
+                  <option>What was your favorite place to visit as a child?</option>
+                  <option>What is your spouse's mother's maiden name?</option>
+                  <option>To what city did you go on your honeymoon?</option>
+                  <option>What time of the day were you born?</option>
+                  <option>What is the street number of the house you grew up in?</option>
+                  <option>Who was your childhood hero?</option>
+                  <option>What was the first concert you attended?</option>
+                  <option>What month and day is your anniversary? (e.g., January 2)</option>
+                  <option>What is your mother's middle name?</option>
+                  <option>What was the make and model of your first car?</option>
+                  <option>What is your preferred musical genre?</option>
+                  <option>What is the name of the first undergraduate college you attended?</option>
+                  <option>What was your high school mascot?</option>
+                  <option>What year did you graduate from High School?</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label">Answer #2</label>
+              <div class="controls">
+                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xlarge" required="">
+                <p class="help-block">Your answer is case-sensitive.</p>
+              </div>
+            </div>
+            
+            <!-- Select Basic -->
+            <div class="control-group">
+              <label class="control-label">Security Question #3</label>
+              <div class="controls">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>What was your childhood nickname?</option>
+                  <option>In what city did you meet your spouse/significant other?</option>
+                  <option>What is the name of your favorite childhood friend?</option>
+                  <option>What is your oldest sibling’s birthday month and year? (e.g., January 1900)</option>
+                  <option>What is the middle name of your oldest child?</option>
+                  <option>What is your oldest sibling's middle name?</option>
+                  <option>What is the first name of the boy or girl that you first kissed?</option>
+                  <option>In what city or town was your first job?</option>
+                  <option>What is the name of the place your wedding reception was held?</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label">Answer #3</label>
+              <div class="controls">
+                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xlarge" required="">
+                <p class="help-block">Your answer is case-sensitive.</p>
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <!-- Button -->
+              <div class="controls">
+                <button class="btn btn-success">Next</button>
+                <button class="btn btn">Cancel</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+          </fieldset>
+        </form>
 
 <body>
 </body>
