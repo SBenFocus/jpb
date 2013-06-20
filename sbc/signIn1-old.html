@@ -30,30 +30,31 @@
   </div> 
 </header>
   
-<div class="well well-large span12">
-	<ul class="nav nav-tabs">
-      <li class="active"><a href="signIn1.html" data-toggle="tab">Registration</a></li>
-      <li><a href="signIn2.html" data-toggle="tab">Login/Security</a></li>
+<div class="span12 mainContainer">
+	<!--<ul class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Registration</a></li>
       <li><a href="#profile" data-toggle="tab">Profile</a></li>
       <li><a href="#legal" data-toggle="tab">Legal Agreements</a></li>
-    </ul>
-    <div class="span12">
-    	<h1 align="center">
-        	<span class="loginText1">Please Identify Yourself</span>
-      	</h1>
-      	<h5 align="center">Step 1 of 4</h5>
-        <h5 align="center">All fields are required.</h5>
+    </ul>-->
+    <div class="welcomeBox">
+    	<div class="span12">
+      		<h1 align="center">
+        		<span class="loginText1">Please Identify Yourself</span>
+      		</h1>
+      		<h5 align="center">Step 1 of 2</h5>
+            <h5 align="center">All fields are required.</h5>
+    	</div>
     </div>
     <div class="container">
-        <form class="form-inline" action='' method="POST">
+        <form>
             <fieldset>
     			<legend></legend>
-                	<div class="control-group">
+                	<div class="row">
                     	<div class="span12">
                         	<div class="row">
                     			<div class="span7">
                     				<h4>Activation PIN</h4>
-                    				<input type="text" id="PIN" placeholder="Enter PIN" class="input-xlarge" required="required">
+                    				<input type="text" placeholder="Enter PIN">
                     				<span class="help-block"> Please enter your Activation PIN as it appears on your enrollment letter.</span>
                             	</div> 
                         		<div class="span5">
@@ -66,34 +67,31 @@
                 		</div>
                      </div>
 				<legend></legend>
-					<div class="control-group">
+					<div class="row">
         				<div class="span12">
                     		<h4>Social Security Number (Last 4 Digits)</h4>
-                    			<input type="text" id="SSN" placeholder="XXXX" class="input-xlarge" required="required">
+                    			<input type="text" placeholder="XXXX">
                     		<span class="help-block">Please enter the last 4 digits of your Social Security Number.</span>
   						</div>  
         			</div>
                 <legend></legend>    
-        			<div class="control-group">
+        			<div class="row">
         				<div class="span12">
                     		<h4>Date of Birth</h4>
-                   				<input type="text" id="DOB" placeholder="mm/dd/yyyy" class="input-xlarge" required="required">
+                   				<input type="text" placeholder="mm/dd/yyyy">
                    			<span class="help-block">Enter your date of birth in the format shown.</span>
                         </div>
                     </div>
-           <div row="span12">
-                <legend></legend>
-                    <div class="control-group">
-                        <div class="controls" align="center">
-                        <button class="btn btn-success">Next</button>
-                        <button class="btn btn">Cancel</button>
-                        </div>
-                    </div>
-            </div>
   			</fieldset>
 		</form>    
 	</div>
-       
+        <div class="footerBox1">
+        	<div row="span12">
+            	<legend></legend>
+                	<button type="submit" class="btn nextButton">Next</button>
+                	<button type="button" class="btn cancelButton">Cancel</button>
+            </div>
+        </div>
 </div>
     
 </body>
