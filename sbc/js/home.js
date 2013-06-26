@@ -1,22 +1,34 @@
-function messageSignCreator (unreadMessagesNumber){
-	var messageSignStr ="";
-	
-	if (unreadMessagesNumber < 1){
-		//Error
-		}
-	else if (unreadMessagesNumber === 1){
-		messageSignStr = "1 Message";
-		}
-	else {
-		messageSignStr = unreadMessagesNumber.toString() + " Messages";
-		}
-	return messageSignStr;
+function messageSignCreator (unreadMessagesNumber) {
+ "use strict";
+ var messageSignStr = "";
+ 
+ if (unreadMessagesNumber < 0){
+  
+  }
+ else if (true){
+
+  }
+ else if (unreadMessagesNumber === 1){
+  messageSignStr = "1 Message";
+  }
+ else {
+  messageSignStr = unreadMessagesNumber.toString() + " Messages";
+  }
+ return messageSignStr;
 }
 
-function AppViewModel(){
-	this.userName 		= 'enFocus PH';
-	this.messagesSign	= '1 Message';
-}
+var Home = {
 
-//Activates KO.js
-ko.applyBindings(new AppViewModel());
+    post: function(url, data {
+        return $.ajax();
+    })
+
+    showLoading: function(selector) {
+        $(selector).button('loading');
+    },
+};
+
+$(function() {
+    window.homeViewModel = new HomeViewModel();
+    ko.applyBindings(window.homeViewModel;)
+});
