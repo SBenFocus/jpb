@@ -1,5 +1,6 @@
-function messageSignCreator (unreadMessagesNumber){
-	var messageSignStr ="";
+function messageSignCreator (unreadMessagesNumber) {
+	"use strict";
+	var messageSignStr = "";
 	
 	if (unreadMessagesNumber < 1){
 		//Error
@@ -13,6 +14,8 @@ function messageSignCreator (unreadMessagesNumber){
 	return messageSignStr;
 }
 
+
+http://maps.googleapis.com/maps/api/staticmap?center=39.083333,-98.583333
 // function AppViewModel(){
 // 	this.userName 		= 'enFocus PH';
 // 	this.messagesSign	= '1 Message';

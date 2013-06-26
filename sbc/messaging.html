@@ -54,28 +54,59 @@
           <tbody>
             <tr>
               <td>09/09/1987</td>
-              <td><i class="icon-envelope"></i>Birth of a Star 1</td>
+              <td>
+                <a href="#messageModal" id="m001" data-toggle="modal">
+                <i class="icon-envelope"></i>Birth of a Star 1
+                </a>
+              </td>
             </tr>
             <tr>
               <td>09/09/1987</td>
-              <td><i class="icon-envelope"></i>Birth of a Star 2</td>
-            </tr>
-            <tr>
+              <td>
+                <a href="#messageModal" id="m002" data-toggle="modal">
+                <i class="icon-envelope"></i>Birth of a Star 2
+                </a>
+              </td>
+            </tr><tr>
               <td>09/09/1987</td>
-              <td><i class="icon-envelope"></i>Birth of a Star 3</td>
-            </tr>
-            <tr>
+              <td>
+                <a href="#messageModal" id="m003" data-toggle="modal">
+                <i class="icon-envelope"></i>Birth of a Star 3
+                </a>
+              </td>
+            </tr><tr>
               <td>09/09/1987</td>
-              <td><i class="icon-envelope"></i>Birth of a Star 4</td>
-            </tr>
-            <tr>
-              <td>09/09/1987</td>
-              <td><i class="icon-envelope"></i>Birth of a Star 5</td>
+              <td>
+                <a href="#messageModal" id="m004" data-toggle="modal">
+                <i class="icon-envelope"></i>Birth of a Star 4
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 </div>
+<div id="messageModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Subject</h3>
+  </div>
+  <div class="modal-body">
+    <strong>From: </strong><span id="modalFrom">Dr. P</span></br>
+    <strong>To: </strong><span id="modalTo">Sue P</span></br>
+    <strong>Regarding: </strong><span id="modalConcerning">Lilly P</span></br></br>
+    <strong>Message:</strong>
+    <p id="modalContent">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, libero, sed ad et reiciendis nihil totam facere unde natus maiores praesentium a corporis debitis quibusdam molestias sapiente dolor nobis vero.
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
