@@ -239,6 +239,13 @@
 	alignment-adjust: central;
 	
 }
+.viewButton {
+	row: span12;
+	width: 50px;
+	height: 15px;
+	alignment-adjust: central;
+	
+}
 .btnIcon {
 	width: 70px;
 	height: 70px;
