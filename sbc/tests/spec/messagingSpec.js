@@ -16,9 +16,14 @@ describe("getMessage",function(){
 	  	sampleMessageArray = [sampleMessage1, sampleMessage2];
 	});
 	it("should return the desired message", function() {
-	  var desiredMessageId = 001, desiredMessage;
+	  var desiredMessageId = 002, desiredMessage;
 	  desiredMessage = message.getMessage(desiredMessageId, sampleMessageArray);
 	  expect(desiredMessage.regarding).toEqual("Sue P");
+	});
+	it("should not return the undesired message", function() {
+	  var desiredMessageId = 001, desiredMessage;
+	  desiredMessage = message.getMessage(desiredMessageId, sampleMessageArray);
+	  expect(desiredMessage.regarding).toNotEqual("Sue P");
 	});
 });
 
