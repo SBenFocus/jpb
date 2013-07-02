@@ -23,7 +23,12 @@ var messageViewModal = {
 	}
 }
 var messageRespondModal = {
-
+	Id: 			"#messageRespondModal",
+	subject: 		"#modalSubject",
+	from:  			"#modalFrom",
+	to:  			"#modalTo",
+	regarding: 		"#modalRegarding",
+	messageContent: "#modalContent",
 }
 
 $(function(){
