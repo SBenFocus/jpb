@@ -41,65 +41,69 @@
   </div> 
 </header>
 
-<div class="span12 mainContainer">
-  <div class="welcomeBox">
-    <div class="span7">
-      <h1>
-        <large class="welcomeText1">Welcome</large>
-        <large class="welcomeText2"> enFocus</large>
-      </h1>
-    </div>         
+<div class="span12 well well-large">
+  <div class="row"> 
+    <div class="span12">
+      <h1><large id="portalSectionName" class="welcomeText1">Welcome</large><large class="welcomeText2"> enFocus</large></h1>
     </div>
-   <div class="span12">
-   <h2>Request Appointment </h2>
-<br />
-   </div>
-   <div class="span12">
-   
-   
-   Appointment is for: <br /><select>
+  </div> 
+    <div class="row">
+      <div class="span12" id="messageContent">
+        <h2>Appointment Request</h2>
+   <table width='100%' class="table table-striped" id="newMessageTable">
+          <thead>
+            <tr>
+              <th width='50%'></th>
+              <th width='50%' ></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="001">
+              <td>Appointment is for: <br />
+<select>
   <option value="primary accout holder">John Doe</option>
   <option value="secondary account holder">Jane Doe</option>
   <option value="member1">John Doe Jr.</option>
   <option value="member2">J Doe</option>
-</select>
-<br />Send to: <br /><select>
+</select></td>
+              <td>Send to: <br />
+<select>
   <option value="primary doctor">Dr. Primary</option>
   <option value="secondary doctor">Dr. Secondary</option>
   <option value="specialist">Dr. Specialist One</option>
   <option value="specialist">Dr. Specialist Two</option>
 </select>
-<br />
-    Reason for Visit Request: <br /><select>
+                </td>
+            </tr>
+            <tr id="002">
+              <td>Reason for Visit Request:<br />
+<select>
   <option value="Check-Up">Check-Up</option>
   <option value="Follow-Up">Follow Up Appointment</option>
   <option value="refferal">Refferal to a Specialist</option>
-  <option value="other">Other</option>
-
-
-</select>
-<br />
-  <form method="post" action="">
+ <option value="other">Other</option>
+</select></td>
+              <td><form method="post" action="">
 <textarea name="comments" cols="25" rows="5">
 Descibe why you would like this appointment...
-</textarea><br>
-
+</textarea>
 </form>
-<form action="" id="">
-  When you like to schedule your appointment:
-  <br /> <input type="checkbox" name="when">Today
+                </td>
+            </tr>
+            <tr id="003">
+              <td>When you like to schedule your appointment:</td>
+              <td><form action="" id="">
+	<input type="checkbox" name="when">Today
  <br /> <input type="checkbox" name="when">This Week
   <br /> <input type="checkbox" name="when">This Month
-</form>
-
+</form></td>
+            </tr>
+            <tr id="004">
+              <td>When is the best time for your appointment?<br /> <br />
 <table class="table table-striped">
-When is the best time for your appointment?
-<br /><br />
 <tr>
-
 <td></td>
 <td></td>
-
 <td>Monday,<br />June 17</td>
 <td>Tuesday,<br />June 18</td>
 <td>Wednesday,<br />June 19</td>
@@ -166,27 +170,32 @@ When is the best time for your appointment?
 <td><form>
 <input type="checkbox" />
 </form></td>
-
 </tr>
-</table>
-<br />
-<form class="span12">
-  How would you like to be Contacted:
-  <br /> <input type="checkbox" name="when">Send me an Email
+</table></td>
+              <td>
+                *Check all that apply.</td>
+            </tr>
+            <tr>
+            <td>How would you like to be Contacted:</td>
+            <td><form>
+<input type="checkbox" name="when">Send me an Email
  <br /> <input type="checkbox" name="when">Call Me
-  <br />   Best contact phone number: <select>
+  <br />   Best contact phone number:<br /> <select>
   <option value="primary">574.123.4567</option>
   <option value="secondary">574.765.4321</option>
 </select>
   <br /> <input type="checkbox" name="when">Send Me a Text Message
-</form>
-
-
+</form></td></tr>
+<tr>
+            <td><input class="btn btn-success" type="submit" value="Send Appointment Request" /></td>
+            <td></td>
+            </tr>
+          </tbody>
+        </table>     
+      </div>
+    </div>
 </div>
 
-<input class="btn btn-success" type="submit" value="Send Appointment Request" />
-    <div class="footerBox2"></div>
-  </div>
 <script type='text/javascript' src='knockout-2.2.1.js'></script>
 
 </body>
