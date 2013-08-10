@@ -6,6 +6,17 @@
 <link type="text/css" href="css/portal.css" rel="stylesheet">
 <link type="text/css" href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 <title>South Bend Clinic Patient Portal</title>
+<style type="text/css">
+            <!--
+input.checkbox  {
+	width : 5em;
+	height :5em;
+	padding: 0px;
+	margin: 0px;
+	}
+
+-->
+        </style>
 </head>
 
 <body background="images/background/stripeBackground.png">
@@ -41,158 +52,163 @@
   </div> 
 </header>
 
-<div class="span12 well well-large">
-  <div class="row"> 
+<div class="well well-large span12">
     <div class="span12">
-      <h1><large id="portalSectionName" class="welcomeText1">Welcome</large><large class="welcomeText2"> enFocus</large></h1>
+    	<h1 align="center">
+        	<span class="loginText1">Welcome eFocus</span><br />Appointment Request
+      	</h1>
+        <h5 align="center">All fields are required.</h5>
     </div>
-  </div> 
-    <div class="row">
-      <div class="span12" id="messageContent">
-        <h2>Appointment Request</h2>
-   <table width='100%' class="table table-striped" id="newMessageTable">
-          <thead>
-            <tr>
-              <th width='50%'></th>
-              <th width='50%' ></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="001">
-              <td>Appointment is for: <br />
-<select>
-  <option value="primary accout holder">John Doe</option>
-  <option value="secondary account holder">Jane Doe</option>
-  <option value="member1">John Doe Jr.</option>
-  <option value="member2">J Doe</option>
-</select></td>
-              <td>Send to: <br />
-<select>
-  <option value="primary doctor">Dr. Primary</option>
-  <option value="secondary doctor">Dr. Secondary</option>
-  <option value="specialist">Dr. Specialist One</option>
-  <option value="specialist">Dr. Specialist Two</option>
-</select>
-                </td>
-            </tr>
-            <tr id="002">
-              <td>Reason for Visit Request:<br />
-<select>
-  <option value="Check-Up">Check-Up</option>
-  <option value="Follow-Up">Follow Up Appointment</option>
-  <option value="refferal">Refferal to a Specialist</option>
- <option value="other">Other</option>
-</select></td>
-              <td><form method="post" action="">
-<textarea name="comments" cols="25" rows="5">
-Descibe why you would like this appointment...
-</textarea>
-</form>
-                </td>
-            </tr>
-            <tr id="003">
-              <td>When you like to schedule your appointment:</td>
-              <td><form action="" id="">
-	<input type="checkbox" name="when">Today
- <br /> <input type="checkbox" name="when">This Week
-  <br /> <input type="checkbox" name="when">This Month
-</form></td>
-            </tr>
-            <tr id="004">
-              <td>When is the best time for your appointment?<br /> <br />
-<table class="table table-striped">
-<tr>
-<td></td>
-<td></td>
-<td>Monday,<br />June 17</td>
-<td>Tuesday,<br />June 18</td>
-<td>Wednesday,<br />June 19</td>
-<td>Thursday,<br />June 20</td>
-<td>Friday,<br />June 21</td>
-</tr>
-<tr>
-<td>Early Morning<br />8am - 11am</td>
-<td></td>
-<td>
-<form>
-<input type="checkbox"  />
-</form>
-</td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-</tr><tr>
-<td>Mid-Day<br />11am - 1pm</td>
-<td></td>
-<td>
-<form>
-<input type="checkbox" />
-</form>
-</td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-</tr><tr>
-<td>Late Afternoon<br />1pm - 4pm</td>
-<td></td>
-<td>
-<form>
-<input type="checkbox" />
-</form>
-</td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-<td><form>
-<input type="checkbox" />
-</form></td>
-</tr>
-</table></td>
-              <td>
-                *Check all that apply.</td>
-            </tr>
-            <tr>
-            <td>How would you like to be Contacted:</td>
-            <td><form>
-<input type="checkbox" name="when">Send me an Email
- <br /> <input type="checkbox" name="when">Call Me
-  <br />   Best contact phone number:<br /> <select>
-  <option value="primary">574.123.4567</option>
-  <option value="secondary">574.765.4321</option>
-</select>
-  <br /> <input type="checkbox" name="when">Send Me a Text Message
-</form></td></tr>
-<tr>
-            <td><input class="btn btn-success" type="submit" value="Send Appointment Request" /></td>
-            <td></td>
-            </tr>
-          </tbody>
-        </table>     
-      </div>
+    
+    <div class="container">
+        <form class="form-horizontal" action='' method="POST">
+          <fieldset>
+            <legend></legend>
+                       <!-- Who -->
+            <div class="control-group">
+              <label class="control-label">Appointment is for:</label>
+              <div class="controls">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>John Doe</option>
+                  <option>Jan Doe</option>
+                </select>
+              </div>
+            </div>
+             <!-- For -->
+            <div class="control-group">
+              <label class="control-label">Send to:</label>
+              <div class="controls">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>Dr. Primary</option>
+                  <option>Dr. Specialist</option>
+                </select>
+              </div>
+            </div>
+               <!-- Reason -->           
+            <div class="control-group">
+              <label class="control-label"  for="username">Reason for Visit:</label>
+                  <div class="controls">
+                    <input type="text" id="username" name="username" placeholder="Check-up..." class="input-xlarge" required="required">
+                    <p class="help-block">Briefly descibe why you would like this appointment.</p>
+                  </div>
+      <!-- Multiple Checkboxes (inline) --><br />
+            <div class="control-group">
+              <label class="control-label">When would you like to your appointment:</label>
+              <div class="controls">
+                <label class="checkbox inline">
+                  <input type="checkbox" name="checkboxes" value="Today" />
+                  Today
+                </label>
+                <label class="checkbox inline">
+                  <input type="checkbox" name="checkboxes" value="This Week" />
+                  This Week
+                </label>
+                <label class="checkbox inline">
+                  <input type="checkbox" name="checkboxes" value="This Month" />
+                  This Month
+                </label>
+              </div>
+            </div>
+                        <div class="control-group"><label class="control-label">When is the best time for your appointment?</label>
+        <div class="controls">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td style="text-align:center">Monday,<br />
+                    June 17</td>
+                    <td style="text-align:center">Tuesday,<br />
+                    June 18</td>
+                    <td style="text-align:center">Wednesday,<br />
+                    June 19</td>
+                    <td style="text-align:center">Thursday,<br />
+                    June 20</td>
+                    <td style="text-align:center">Friday,<br />
+                    June 21</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Early Morning<br />
+                    8 a.m. - 11 a.m.</td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Mid-Day<br />
+                    11 a.m. - 1 p.m.</td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Late Afternoon<br />
+                    1p.m. - 4 p.m.</td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                    <td>
+                        <input name="checkbox" class="checkbox" type="checkbox" value="checkbox" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>          <!-- contact -->
+            <div class="control-group">
+              <label class="control-label">How would you like to be Contacted:</label>
+              <div class="controls">
+                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                  <option>Send me an Email</option>
+                  <option>Call me</option>
+                  <option>Send me a text message</option>
+                </select>
+              </div>
+            </div>
+            
+           <br /> <div row="span12">
+                <legend></legend>
+                    <div class="control-group">
+                        <div class="controls" align="center">
+                        <button class="btn btn-success">Send Appointment Request</button>
+                        <button class="btn btn">Cancel</button>
+                        </div>
+                    </div>
+            </div>
+          </fieldset>
+        </form>
     </div>
 </div>
 
