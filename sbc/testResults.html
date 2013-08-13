@@ -12,7 +12,7 @@
 <div class="navbar">
   <div class="navbar-inner">
     <ul class="nav">
-      <li class="active"><a href="home.html">Home</a></li>
+       <li class="active"><a href="home.html">Home</a></li>
       <li class="divider-vertical"></li>
       <li><a href="appointment.html">Appointments</a></li>
       <li class="divider-vertical"></li>
@@ -41,20 +41,20 @@
 <div class="span12 well well-large">
   <div class="row"> 
     <div class="span12">
-      <h1><large id="portalSectionName" class="welcomeText1">Messages for:</large><large class="welcomeText2"> enFocus</large></h1>
+      <h1><large id="portalSectionName" class="welcomeText1">Test Results for:</large><large class="welcomeText2"> enFocus</large></h1>
     </div>
   </div> 
     <div class="row">
       <div class="span3">
         <ul class="nav nav-tabs nav-stacked nav-side">
           <li class="active"><a href="#">What's New</a></li>
-          <li><a href="#">View Past Results</a></li>
-          <li><a href="#">View Chronic Issues</a></li>
+          <li><a href="#">Pending Results</a></li>
+          <li><a href="#">Previous Results</a></li>
         </ul>
       </div>
       <div class="span8" id="messageContent">
         <h2>Test Results</h2>
-        <table class="table table-striped">
+        <table width='100%' class="table table-striped" id="newMessageTable">
           <thead>
             <tr>
               <th width='10%'>Date</th>
@@ -62,47 +62,55 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>04/01/2013</td>
-              <td>Heart Diagnostic</td>
+            <tr id="001">
+              <td>09/09/1987</td>
               <td>
-<p class="btn btn-info viewButton">View</p>
+               Birth of a Star 1 </td>
+            </tr>
+            <tr id="002">
+              <td>09/09/1987</td>
+              <td>
+                 Birth of a Star 2
               </td>
             </tr>
-            <tr>
-              <td>03/28/2013</td>
-              <td>Pap Smear</td>
-                            <td>
-<p class="btn btn-info viewButton">View</p>
+            <tr id="003">
+              <td>09/09/1987</td>
+              <td>
+                Birth of a Star 3
               </td>
             </tr>
-         
-          </tbody>
-        </table>
-        <br />
-        <br />
-        
-        <table width='100%' class="table table-bordered" id="newMessageTable">
-          <thead>
-            <tr>
-              <th width='10%'>Date</th>
-              <th width='90%' >Category</th>
+            <tr id="004">
+              <td>09/09/1987</td>
+              <td>
+                 Birth of a Star 4
+              </td>
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>04/01/2013</td>
-              <td>Heart Diagnostic</td>
-            </tr>
-            <tr>
-              <td>03/28/2013</td>
-              <td>Pap Smear</td>
-            </tr>
-         
           </tbody>
         </table>
       </div>
     </div>
 </div>
+<div id="messageViewModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="modalSubject">Subject</h3>
+  </div>
+  <div class="modal-body">
+    <strong>From: </strong><span id="modalFrom"></span></br>
+    <strong>To: </strong><span id="modalTo"></span></br>
+    <strong>Regarding: </strong><span id="modalRegarding"></span></br></br>
+    <strong>Message:</strong>
+    <p id="modalContent">
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/messaging.js"></script>
 </body>
 </html>
